@@ -1,0 +1,77 @@
+import React from 'react'
+
+const Header = () => {
+  return(
+    
+    <div className="min-h-screen bg-gray-100 flex justify-center items-center">
+    
+      <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full max-w-3xl">
+
+        <header className="bg-[#d3c8a5] px-6 py-4 flex items-center justify-between">
+          <div className="text-2xl font-semibold text-gray-700">Purity</div>
+          <div className="flex items-center w-full max-w-lg ml-4">
+            <input
+              type="text"
+              placeholder="Search for Gold Jewellery, Diamond Jewellery and more..."
+              className="flex-1 p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring focus:ring-green-300"
+            />
+          </div>
+          <div className="flex space-x-4">
+            <button className="text-gray-700">
+              <i className="fas fa-user"></i>
+            </button>
+            <button className="text-gray-700">
+              <i className="fas fa-heart"></i>
+            </button>
+            <button className="text-gray-700">
+              <i className="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </header>
+        <div>
+         
+         <div className="p-8 flex flex-col md:flex-row items-center md:items-start">
+          
+      
+          <div className="md:w-1/2">
+            <h1 className="text-3xl font-bold text-gray-800 mb-4">
+              Impeccable Craftsmanship and Finesse
+            </h1>
+            <p className="text-gray-600 mb-4">
+              An example of intricate workmanship and detail, elegant necklaces and long and short chains form a part of our desirable collection.
+            </p>
+            <button className="px-4 py-2 bg-[#d3c8a5] text-white rounded-lg hover:bg-gray-700">
+              Explore Now
+            </button>
+          </div>
+
+          <div className="md:w-1/2 mt-6 md:mt-0 md:pl-8">
+            <div className="relative">
+  
+              <img src="/Screenshot (5).png "alt=""/>
+              
+            </div>
+          </div>  
+         
+    </div>
+    </div>
+    </div>
+    </div>
+  )
+}
+
+export default Header
+
+//page.tsx
+
+import Image from "next/image";
+import Header from "./Component/Header";
+export default function Home() {
+  return (
+    <div>
+
+      
+      <Header/> 
+    </div>
+  );
+}
